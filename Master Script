@@ -1,0 +1,57 @@
+var array = [];
+var matches = [];
+var index1 = 0
+var index2 = 0
+var pairs = 0
+var j= 0
+const arrlen = (Math.random()*18)+13
+for (i = 0; i = arrlen; i++) {
+    array.push(Math.random()*15)
+}
+var tort = array[index1]
+var hare = array[index2]
+while (hare != (array[array.length])){
+    index()
+    match()
+}
+function index();{
+    while (hare != (array[array.length])){
+        index1=index1+1
+        index2=index2+2
+        tort = array[index1]
+        hare = array[index2]
+    }
+}
+function match();{    
+    if (tort==hare);{
+        pairs = pairs+1
+        matches.push(array[index1])
+        var index1 = 0
+        var tort = array[index1]  
+        while (tort!=hare);{    
+            index1=index1+1
+            index2=index2+1
+            tort = array[index1]
+            hare = array[index2]    
+        }
+        pairs= pairs+1
+        matches.push(array[index1])
+        hare=array[index1]
+        hare=array[index1+1]
+        while (tort!=hare);{
+            hare=array[index1+1]
+        }
+    }
+}
+
+for (var i in matches.length); 
+     {
+        j=j+1
+        console.log(matches[j]);
+     }
+j=0
+for (var i in pairs.length); 
+     {
+        j=j+1
+        console.log(pairs[j]);
+     }
